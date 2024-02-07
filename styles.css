@@ -31,7 +31,7 @@ header {
   top: 0;
 }
 
-.header--title {
+h1 {
   font-size: 2em;
   color: var(--light-color);
   text-align: center;
@@ -63,5 +63,40 @@ nav {
 .fa-solid,
 .fa-regular {
   font-size: 22px;
-  /*color: var(--secondary-color);*/
+}
+
+/*Profile*/
+
+.content--profile {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 80%;
+}
+
+.profile--categories {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+.profile--categories--sm {
+  background-color: var(--light-color-secondary);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+.profile-picture {
+  font-size: 3em;
+  padding: 20px;
+  background-color: var(--light-color-secondary);
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+}
+/*Headings*/
+
+h2 {
+  font-size: 1.5em;
 }
