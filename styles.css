@@ -54,7 +54,7 @@ nav {
   color: var(--light-color-secondary);
 }
 
-.nav--icon--home {
+.nav--icon--active {
   color: var(--primary-color);
 }
 
