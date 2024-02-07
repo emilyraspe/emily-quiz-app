@@ -1,0 +1,13 @@
+/* Button Style*/
+button {
+  background-color: var(--highlight-color);
+  color: var(--light-color);
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}

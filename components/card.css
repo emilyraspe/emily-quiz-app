@@ -1,0 +1,44 @@
+/* Card and Content fo page*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 80%;
+}
+
+.cards {
+  background-color: var(--light-color-secondary);
+  border-radius: 10px;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+}
+
+.cards--icon {
+  margin-top: -25px;
+  padding-bottom: 10px;
+  align-self: flex-end;
+  color: var(--primary-color);
+}
+
+.categories {
+  background-color: var(--light-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.categories--main {
+  align-self: flex-start;
+}
+
+p {
+  text-align: center;
+}

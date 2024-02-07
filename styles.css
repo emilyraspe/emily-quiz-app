@@ -1,3 +1,6 @@
+@import url(./components/button.css);
+@import url(./components/card.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,64 +35,6 @@ header {
   font-size: 2em;
   color: var(--light-color);
   text-align: center;
-}
-
-/*Content*/
-.content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 80%;
-}
-
-.cards {
-  background-color: var(--light-color-secondary);
-  border-radius: 10px;
-  padding: var(--spacing);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--primary-color);
-}
-
-.cards--icon {
-  margin-top: -25px;
-  padding-bottom: 10px;
-  align-self: flex-end;
-  color: var(--primary-color);
-}
-
-.categories {
-  background-color: var(--light-color);
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 5px;
-}
-
-.categories--main {
-  align-self: flex-start;
-}
-
-p {
-  text-align: center;
-}
-
-/*Button*/
-button {
-  background-color: var(--highlight-color);
-  color: var(--light-color);
-  border: none;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
 }
 
 /*Navigation*/
