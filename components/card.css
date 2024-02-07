@@ -28,6 +28,10 @@
   color: var(--primary-color);
 }
 
+.cards--icon--active {
+  color: var(--highlight-color);
+}
+
 .categories {
   background-color: var(--light-color);
   padding: 5px;
