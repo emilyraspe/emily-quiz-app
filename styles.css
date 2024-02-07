@@ -100,3 +100,16 @@ nav {
 h2 {
   font-size: 1.5em;
 }
+
+/*Media Querie*/
+
+@media (min-width: 900px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .categories {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
