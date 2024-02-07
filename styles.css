@@ -11,7 +11,7 @@
   --secondary-color: #403d39;
   --highlight-color: #eb5e28;
   --light-color: #fffcf2;
-  --light-color-secondary: #ccc5b9;
+  --light-color-secondary: #c2d4c6;
   --spacing: 20px;
 }
 
@@ -19,10 +19,10 @@ body {
   background-color: var(--light-color);
 }
 
+/*Header*/
 header {
   padding: var(--spacing);
-  background-color: var(--light-color-secondary);
-  border-radius: 0px 0px 10px 10px;
+  background-color: var(--secondary-color);
   position: fixed;
   width: 100%;
   top: 0;
@@ -30,20 +30,11 @@ header {
 
 .header--title {
   font-size: 2em;
-  color: var(--primary-color);
+  color: var(--light-color);
   text-align: center;
 }
 
-.nav--main {
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: var(--spacing);
-  background-color: var(--light-color);
-}
-
+/*Content*/
 .content {
   display: flex;
   justify-content: center;
@@ -55,13 +46,21 @@ header {
   max-width: 80%;
 }
 
-.question-cards {
+.cards {
   background-color: var(--light-color-secondary);
   border-radius: 10px;
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid var(--primary-color);
+}
+
+.cards--icon {
+  margin-top: -25px;
+  padding-bottom: 10px;
+  align-self: flex-end;
+  color: var(--primary-color);
 }
 
 .categories {
@@ -79,6 +78,7 @@ p {
   text-align: center;
 }
 
+/*Button*/
 button {
   background-color: var(--highlight-color);
   color: var(--light-color);
@@ -90,4 +90,33 @@ button {
 
 button:hover {
   background-color: var(--secondary-color);
+}
+
+/*Navigation*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--light-color);
+  border-top: 1px solid var(--primary-color);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.nav--icon {
+  color: var(--light-color-secondary);
+}
+
+.nav--icon--home {
+  color: var(--primary-color);
+}
+
+/*Icons*/
+
+.fa-solid,
+.fa-regular {
+  font-size: 22px;
+  /*color: var(--secondary-color);*/
 }
