@@ -1,13 +1,15 @@
 /* Button Style*/
 button {
   background-color: var(--highlight-color);
-  color: var(--light-color);
+  color: var(--white);
   border: none;
   padding: 10px;
-  margin: 20px;
+  margin: 25px;
   border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--highlight-color-variation);
 }

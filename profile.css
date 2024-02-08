@@ -1,0 +1,38 @@
+/*Profile*/
+
+.content--profile {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 80%;
+}
+
+.profile--categories {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+.profile--categories--sm {
+  background-color: var();
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var();
+}
+
+.profile-picture {
+  font-size: 3em;
+  padding: 20px;
+  background-color: var();
+  border-radius: 50px;
+  border: 1px solid var();
+}
+
+.profile--icons {
+  padding-right: 15px;
+}
+
+.fa-toggle-off {
+  font-size: 28px;
+}

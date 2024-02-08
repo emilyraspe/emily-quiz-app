@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+/*Headings*/
+h1 {
+  font-size: 2rem;
+  color: var(--second-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/*Header*/
+header {
+  padding: var(--spacing);
+  background-color: var(--main--color);
+  position: fixed;
+  width: 90%;
+  top: 0;
+  border-radius: 0px 0px 80px 0px;
+  /*Shadow is copied*/
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+/*Navigation*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--main--color);
+}
+
+.nav--icon {
+  color: var(--third-color);
+}
+
+.nav--icon--active {
+  color: var(--second-color);
+}
+
+/*Icons*/
+
+.fa-solid,
+.fa-regular {
+  font-size: 22px;
+}
+/*Media Querie*/
+
+@media (min-width: 900px) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards {
+    max-width: 45%;
+  }
+
+  /*
+    .categories {
+      display: block;
+      margin-bottom: 10px;
+    }
+    */
+}

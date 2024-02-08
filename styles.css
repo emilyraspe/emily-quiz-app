@@ -1,127 +1,15 @@
 @import url(./components/button.css);
 @import url(./components/card.css);
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-}
+@import url(./global.css);
+@import url(./components/profile.css);
 
 :root {
-  --primary-color: #252422;
-  --secondary-color: #403d39;
-  --highlight-color: #eb5e28;
-  --light-color: #fffcf2;
-  --light-color-secondary: #c2d4c6;
-  --light-green: #9fb3a2;
   --spacing: 20px;
-}
 
-body {
-  background-color: var(--light-color);
-}
-
-/*Header*/
-header {
-  padding: var(--spacing);
-  background-color: var(--secondary-color);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  border-radius: 0px 0px 10px 10px;
-}
-
-h1 {
-  font-size: 2rem;
-  color: var(--light-color);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/*Navigation*/
-nav {
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: var(--light-color);
-  border-top: 1px solid var(--primary-color);
-  border-radius: 10px 10px 0px 0px;
-}
-
-.nav--icon {
-  color: var(--light-color-secondary);
-}
-
-.nav--icon--active {
-  color: var(--primary-color);
-}
-
-/*Icons*/
-
-.fa-solid,
-.fa-regular {
-  font-size: 22px;
-}
-
-/*Profile*/
-
-.content--profile {
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 80%;
-}
-
-.profile--categories {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  gap: 30px;
-  align-items: baseline;
-}
-.profile--categories--sm {
-  background-color: var(--light-color-secondary);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--primary-color);
-}
-
-.profile-picture {
-  font-size: 3em;
-  padding: 20px;
-  background-color: var(--light-color-secondary);
-  border-radius: 50px;
-  border: 1px solid var(--primary-color);
-}
-/*Headings*/
-
-h2 {
-  font-size: 1.5em;
-}
-
-/*Media Querie*/
-
-@media (min-width: 900px) {
-  .content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cards {
-    max-width: 45%;
-  }
-
-  /*
-  .categories {
-    display: block;
-    margin-bottom: 10px;
-  }
-  */
+  --white: #fdfdfd;
+  --main--color: #2b2d42;
+  --second-color: #e4eeff;
+  --third-color: #8d99ae;
+  --highlight-color: #d90429;
+  --highlight-color-variation: #ef233c;
 }
