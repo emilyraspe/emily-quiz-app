@@ -24,11 +24,11 @@
   margin-top: -25px;
   padding-bottom: 10px;
   align-self: flex-end;
-  color: var(--primary-color);
+  color: var(--light-green);
 }
 
 .cards--icon--active {
-  color: var(--highlight-color);
+  color: var(--primary-color);
 }
 
 .categories {

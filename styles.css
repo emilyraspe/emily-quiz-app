@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -15,6 +15,7 @@
   --highlight-color: #eb5e28;
   --light-color: #fffcf2;
   --light-color-secondary: #c2d4c6;
+  --light-green: #9fb3a2;
   --spacing: 20px;
 }
 
@@ -29,12 +30,15 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  border-radius: 0px 0px 10px 10px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   color: var(--light-color);
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 /*Navigation*/
@@ -106,10 +110,18 @@ h2 {
 @media (min-width: 900px) {
   .content {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
+  .cards {
+    max-width: 45%;
+  }
+
+  /*
   .categories {
     display: block;
     margin-bottom: 10px;
   }
+  */
 }
