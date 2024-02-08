@@ -28,7 +28,7 @@ header {
   padding: var(--spacing);
   background-color: var(--main--color);
   position: fixed;
-  width: 90%;
+  width: 95%;
   top: 0;
   border-radius: 0px 0px 80px 0px;
   /*Shadow is copied*/
@@ -72,6 +72,11 @@ nav {
 
   .cards {
     max-width: 45%;
+  }
+
+  header {
+    border-radius: 0px;
+    width: 100%;
   }
 
   /*
