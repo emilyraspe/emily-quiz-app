@@ -22,12 +22,30 @@
     </header>
 
     <main data-js="main">
-      <form class="content" data-js="form">
+      <form class="content--form" data-js="form">
         <label for="yourQuestion">Your question</label>
-        <textarea name="yourQuestion" maxlength="150"></textarea>
+        <textarea
+          name="yourQuestion"
+          maxlength="150"
+          cols="24"
+          rows="3"
+          data-js="charactersQuestion"
+        ></textarea>
+        <p class="small">
+          <span class="counterQuestion small">150</span> Characters left
+        </p>
 
         <label for="yourAnswer">Your answer</label>
-        <textarea name="yourAnswer" maxlength="150"></textarea>
+        <textarea
+          name="yourAnswer"
+          maxlength="150"
+          cols="24"
+          rows="3"
+          data-js="charactersAnswer"
+        ></textarea>
+        <p class="small">
+          <span class="counterAnswer small">150</span> Characters left
+        </p>
 
         <label for="tags">Tags</label>
         <input type="text" name="tags" />
@@ -57,8 +75,6 @@
         ></a>
       </div>
     </nav>
-
     <script src="./js/form.js"></script>
-    <script src="./js/index.js"></script>
   </body>
 </html>
