@@ -16,7 +16,9 @@ const answer = document.querySelector('[data-js="answer"]');
 answerButton.addEventListener("click", () => {
   if (answer.hasAttribute("hidden")) {
     answer.removeAttribute("hidden");
+    answerButton.textContent = "Hide answer";
   } else {
     answer.setAttribute("hidden", true);
+    answerButton.textContent = "Show answer";
   }
 });

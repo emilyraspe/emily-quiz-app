@@ -25,10 +25,12 @@
   padding-bottom: 10px;
   align-self: flex-end;
   color: var(--third-color);
+  transition: 500ms ease-in-out;
 }
 
 .cards--icon--active {
   color: var(--main--color);
+  transition: 500ms ease-in-out;
 }
 
 .cards--categories {
@@ -41,6 +43,7 @@
 .cards--categories--main {
   align-self: flex-start;
   padding-top: 20px;
+  margin-top: 15px;
   border-top: 1px solid var(--third-color);
   width: 100%;
 }

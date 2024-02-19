@@ -49,10 +49,12 @@ nav {
 
 .nav--icon {
   color: var(--third-color);
+  transition: 500ms ease-in-out;
 }
 
 .nav--icon--active {
   color: var(--second-color);
+  transition: 500ms ease-in-out;
 }
 
 /*Icons*/
@@ -70,6 +72,11 @@ nav {
 
 .profile--categories--sm--darkmode {
   color: var(--main--color);
+}
+
+/*Counter Color for form page*/
+.countercolor {
+  color: var(--highlight-color);
 }
 
 /*Media Querie*/

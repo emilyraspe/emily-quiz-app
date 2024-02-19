@@ -24,11 +24,18 @@
 
     <main class="content">
       <section class="cards">
-        <i class="fa-solid fa-bookmark cards--icon cards--icon--active"></i>
+        <i
+          class="fa-solid fa-bookmark cards--icon cards--icon--active"
+          data-js="bookmark"
+        ></i>
         <p class="cards--text">
           What is the name of the school that Harry Potter attends?
         </p>
-        <button>Show answer</button>
+
+        <button data-js="answer-button">Show answer</button>
+        <p hidden class="cards--text" data-js="answer">
+          Hogwarts School of Witchcraft and Wizardry
+        </p>
         <div class="cards--categories--main">
           <span class="cards--categories"> #html </span>
           <span class="cards--categories"> #flexbox </span>
@@ -77,16 +84,26 @@
 
     <nav>
       <div class="nav--home">
-        <a href="./index.html"><i class="fa-solid fa-house nav--icon"></i></a>
+        <a href="./index.html" aria-label="Home button"
+          ><i class="fa-solid fa-house nav--icon"></i
+        ></a>
       </div>
       <div class="nav--bookmarks">
-        <a href="./bookmarks.html"
+        <a href="./bookmarks.html" aria-label="Bookmarks button"
           ><i class="fa-solid fa-bookmark nav--icon nav--icon--active"></i
         ></a>
       </div>
+      <div class="nav--form">
+        <a href="./form.html" aria-label="Form button"
+          ><i class="fa-solid fa-plus nav--icon"></i
+        ></a>
+      </div>
       <div class="nav--profile">
-        <a href="./profile.html"><i class="fa-solid fa-user nav--icon"></i></a>
+        <a href="./profile.html" aria-label="profile button"
+          ><i class="fa-solid fa-user nav--icon"></i
+        ></a>
       </div>
     </nav>
+    <script src="./js/index.js"></script>
   </body>
 </html>

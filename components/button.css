@@ -8,8 +8,10 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 500ms ease-in-out;
 }
 
 button:hover {
   background-color: var(--highlight-color-variation);
+  transition: 500ms ease-in-out;
 }

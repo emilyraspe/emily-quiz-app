@@ -41,14 +41,6 @@ form.addEventListener("submit", (event) => {
   </div>`;
 });
 
-/*
-function createElementForCard(elementName, kindOfElement, classForElement) {
-  const elementName = document.createElement(kindOfElement);
-  card.append(elementName);
-  elementName.classList.add(classForElement);
-}
-*/
-
 //function for Counter
 function CharacterCounter(inputElement, counterElement, maxLength) {
   inputElement.addEventListener("input", (event) => {
@@ -71,3 +63,5 @@ const charactersAnswer = document.querySelector('[data-js="charactersAnswer"]');
 const counterAnswer = document.querySelector(".counterAnswer");
 const maxLengthAnswer = 150;
 CharacterCounter(charactersAnswer, counterAnswer, maxLengthAnswer);
+
+//
