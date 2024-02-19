@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emilys Quiz App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d6a3c42c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <form class="content">
+        <label for="yourQuestion">Your question</label>
+        <textarea name="yourQuestion" maxlength="150"></textarea>
+
+        <label for="yourAnswer">Your answer</label>
+        <textarea name="yourAnswer" maxlength="150"></textarea>
+
+        <label for="tags">Tags</label>
+        <input type="text" />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <nav>
+      <div class="nav--home">
+        <a href="./index.html" aria-label="Home button"
+          ><i class="fa-solid fa-house nav--icon"></i
+        ></a>
+      </div>
+      <div class="nav--bookmarks">
+        <a href="./bookmarks.html" aria-label="Bookmarks button"
+          ><i class="fa-solid fa-bookmark nav--icon"></i
+        ></a>
+      </div>
+      <div class="nav--form">
+        <a href="./form.html" aria-label="Form button"
+          ><i class="fa-solid fa-plus nav--icon nav--icon--active"></i
+        ></a>
+      </div>
+      <div class="nav--profile">
+        <a href="./profile.html" aria-label="profile button"
+          ><i class="fa-solid fa-user nav--icon"></i
+        ></a>
+      </div>
+    </nav>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
