@@ -61,6 +61,17 @@ nav {
 .fa-regular {
   font-size: 22px;
 }
+
+/*Darkmode*/
+.darkmode {
+  background-color: var(--main--color);
+  color: var(--second-color);
+}
+
+.profile--categories--sm--darkmode {
+  color: var(--main--color);
+}
+
 /*Media Querie*/
 
 @media (min-width: 900px) {
