@@ -16,13 +16,13 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
 
-    <main>
-      <form class="content">
+    <main data-js="main">
+      <form class="content" data-js="form">
         <label for="yourQuestion">Your question</label>
         <textarea name="yourQuestion" maxlength="150"></textarea>
 
@@ -30,7 +30,7 @@
         <textarea name="yourAnswer" maxlength="150"></textarea>
 
         <label for="tags">Tags</label>
-        <input type="text" />
+        <input type="text" name="tags" />
         <button type="submit">Submit</button>
       </form>
     </main>
@@ -58,6 +58,6 @@
       </div>
     </nav>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
