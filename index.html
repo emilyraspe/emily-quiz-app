@@ -23,13 +23,15 @@
 
     <main class="content">
       <section class="cards">
-        <i class="fa-solid fa-bookmark cards--icon"></i>
+        <i class="fa-solid fa-bookmark cards--icon" data-js="bookmark"></i>
         <p class="cards--text">
           What is the name of the school that Harry Potter attends?
         </p>
 
-        <p hidden class="cards--text">answer</p>
-        <button>Show answer</button>
+        <button data-js="answer-button">Show answer</button>
+        <p hidden class="cards--text" data-js="answer">
+          Hogwarts School of Witchcraft and Wizardry
+        </p>
         <div class="cards--categories--main">
           <span class="cards--categories"> #html </span>
           <span class="cards--categories"> #flexbox </span>
@@ -122,5 +124,7 @@
         ></a>
       </div>
     </nav>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
