@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1 class="header--title">Quiz App</h1>
     </header>
@@ -41,10 +41,10 @@
           sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
         </p>
         <div class="profile--categories">
-          <span class="profile--categories--sm">
+          <span class="profile--categories--sm" data-js="profileCategoriesOne">
             <i class="fa-solid fa-question profile--icons"></i> 3
           </span>
-          <span class="profile--categories--sm">
+          <span class="profile--categories--sm" data-js="profileCategoriesTwo">
             <i class="fa-solid fa-bookmark profile--icons"></i> 14
           </span>
         </div>
@@ -54,7 +54,7 @@
           <h2>Dark mode</h2>
           <!-- the switch is copied from w3schools-->
           <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" data-js="toggleSwitch" />
             <span class="slider round"></span>
           </label>
         </div>
@@ -63,18 +63,26 @@
 
     <nav>
       <div class="nav--home">
-        <a href="./index.html"><i class="fa-solid fa-house nav--icon"></i></a>
+        <a href="./index.html" aria-label="Home button"
+          ><i class="fa-solid fa-house nav--icon"></i
+        ></a>
       </div>
       <div class="nav--bookmarks">
-        <a href="./bookmarks.html"
+        <a href="./bookmarks.html" aria-label="Bookmarks button"
           ><i class="fa-solid fa-bookmark nav--icon"></i
         ></a>
       </div>
+      <div class="nav--form">
+        <a href="./form.html" aria-label="Form button"
+          ><i class="fa-solid fa-plus nav--icon"></i
+        ></a>
+      </div>
       <div class="nav--profile">
-        <a href="./profile.html"
+        <a href="./profile.html" aria-label="profile button"
           ><i class="fa-solid fa-user nav--icon nav--icon--active"></i
         ></a>
       </div>
     </nav>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>
