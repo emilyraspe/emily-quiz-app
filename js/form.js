@@ -1,0 +1,73 @@
+// form
+
+const form = document.querySelector('[data-js="form"]');
+const body = document.querySelector('[data-js="body"]');
+const main = document.querySelector('[data-js="main"]');
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  // Data from form
+  const formElements = event.target.elements;
+  const question = formElements.yourQuestion.value;
+  const answer = formElements.yourAnswer.value;
+  const tag = "#" + formElements.tags.value;
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  //add card
+  const divForCard = document.createElement("div");
+  const card = document.createElement("section");
+
+  main.append(divForCard);
+  divForCard.append(card);
+  divForCard.classList.add("content--form--card");
+  card.classList.add("cards");
+
+  //innerhtml for card
+  card.innerHTML = `
+  <i class="fa-solid fa-bookmark cards--icon" data-js="bookmark"></i>
+  <p class="cards--text">
+  ${question}
+  </p>
+
+  <button data-js="answer-button">Show answer</button>
+  <p hidden class="cards--text" data-js="answer">
+  ${answer}
+  </p>
+  <div class="cards--categories--main">
+    <span class="cards--categories">  ${tag} </span>
+  </div>`;
+});
+
+/*
+function createElementForCard(elementName, kindOfElement, classForElement) {
+  const elementName = document.createElement(kindOfElement);
+  card.append(elementName);
+  elementName.classList.add(classForElement);
+}
+*/
+
+//function for Counter
+function CharacterCounter(inputElement, counterElement, maxLength) {
+  inputElement.addEventListener("input", (event) => {
+    let numberOfCharacters = event.target.value.length;
+    let numbersLeft = maxLength - numberOfCharacters;
+    counterElement.innerHTML = numbersLeft;
+  });
+}
+
+// Charactercounter Question
+const charactersQuestion = document.querySelector(
+  '[data-js="charactersQuestion"]'
+);
+const counterQuestion = document.querySelector(".counterQuestion");
+const maxLengthQuestion = 150;
+CharacterCounter(charactersQuestion, counterQuestion, maxLengthQuestion);
+
+// Charactercounter Answer
+const charactersAnswer = document.querySelector('[data-js="charactersAnswer"]');
+const counterAnswer = document.querySelector(".counterAnswer");
+const maxLengthAnswer = 150;
+CharacterCounter(charactersAnswer, counterAnswer, maxLengthAnswer);

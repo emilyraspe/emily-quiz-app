@@ -2,6 +2,7 @@
 @import url(./components/card.css);
 @import url(./global.css);
 @import url(./components/profile.css);
+@import url(./components/form.css);
 
 :root {
   --spacing: 20px;
