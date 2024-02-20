@@ -63,5 +63,3 @@ const charactersAnswer = document.querySelector('[data-js="charactersAnswer"]');
 const counterAnswer = document.querySelector(".counterAnswer");
 const maxLengthAnswer = 150;
 CharacterCounter(charactersAnswer, counterAnswer, maxLengthAnswer);
-
-//

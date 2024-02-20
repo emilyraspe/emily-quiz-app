@@ -14,4 +14,6 @@ button {
 button:hover {
   background-color: var(--highlight-color-variation);
   transition: 500ms ease-in-out;
+  /*Boxshadow is copied from here https://getcssscan.com/css-box-shadow-examples*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
