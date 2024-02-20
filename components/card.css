@@ -18,6 +18,10 @@
   flex-direction: column;
   align-items: center;
   min-width: 45%;
+
+  /*Animation*/
+  animation-name: show-up;
+  animation-duration: 1s;
 }
 
 .cards--icon {
@@ -51,4 +55,18 @@
 .cards--text {
   text-align: center;
   font-weight: 600;
+}
+
+/*Animation for card on formpage*/
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }

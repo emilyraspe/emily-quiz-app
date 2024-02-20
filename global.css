@@ -34,6 +34,8 @@ header {
   /*Shadow is copied*/
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-bottom: 1px solid var(--white);
+  border-right: 1px solid var(--white);
 }
 
 /*Navigation*/
@@ -45,6 +47,7 @@ nav {
   width: 100%;
   padding: 20px;
   background-color: var(--main--color);
+  border-top: 1px solid var(--white);
 }
 
 .nav--icon {
