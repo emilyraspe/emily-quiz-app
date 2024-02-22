@@ -1,5 +1,5 @@
 // toggle function for bookmark
-const bookmark = document.querySelectorAll(".fa-bookmark");
+const bookmark = document.querySelectorAll('[data-js="bookmark"]');
 
 bookmark.forEach((bookmark) => {
   bookmark.addEventListener("click", () => {
