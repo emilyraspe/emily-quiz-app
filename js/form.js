@@ -39,6 +39,30 @@ form.addEventListener("submit", (event) => {
   <div class="cards--categories--main">
     <span class="cards--categories">  ${tag} </span>
   </div>`;
+
+  //bookmark
+  const bookmark = card.querySelector('[data-js="bookmark"]');
+  bookmark.addEventListener("click", () => {
+    if (bookmark.classList.contains("cards--icon--active")) {
+      bookmark.classList.remove("cards--icon--active");
+    } else {
+      bookmark.classList.add("cards--icon--active");
+    }
+  });
+
+  //toggle function for answer
+  const answerButton = card.querySelector('[data-js="answer-button"]');
+  const answerText = card.querySelector('[data-js="answer"]');
+
+  answerButton.addEventListener("click", () => {
+    if (answerText.hasAttribute("hidden")) {
+      answerText.removeAttribute("hidden");
+      answerButton.textContent = "Hide answer";
+    } else {
+      answerText.setAttribute("hidden", true);
+      answerButton.textContent = "Show answer";
+    }
+  });
 });
 
 //function for Counter
@@ -63,3 +87,5 @@ const charactersAnswer = document.querySelector('[data-js="charactersAnswer"]');
 const counterAnswer = document.querySelector(".counterAnswer");
 const maxLengthAnswer = 150;
 CharacterCounter(charactersAnswer, counterAnswer, maxLengthAnswer);
+
+//Color for counter
